@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import MyButton from './components/button';
+import MyButton from './button/button';
 import Profile from './profile/profile';
 import Navbar from './navbar/navbar';
 import Products from './products/products';
