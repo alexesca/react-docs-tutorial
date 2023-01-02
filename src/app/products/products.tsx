@@ -1,6 +1,6 @@
 interface IProduct { title: string, isFruit: boolean, id: number }
 
-export default function Products({products}: {products: [IProduct]}) {
+export default function Products({products}: {products: IProduct[]}) {
 
     const listItems = products.map(product => <li
         key={product.id}

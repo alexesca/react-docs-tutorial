@@ -3,6 +3,8 @@ import MyButton from './button/button';
 import Profile from './profile/profile';
 import Navbar from './navbar/navbar';
 import Products from './products/products';
+import Counter from './counter/counter';
+
 import './../styles.scss';
 
 const products = [
@@ -25,6 +27,7 @@ export default function App() {
             <Profile user={user}></Profile>
             <MyButton dto={dto}/>
             <Products products={products}></Products>
+            <Counter start={0}></Counter>
         </>
     );
 }
