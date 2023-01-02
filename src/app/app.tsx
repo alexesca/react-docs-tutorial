@@ -2,7 +2,14 @@
 import MyButton from './components/button';
 import Profile from './profile/profile';
 import Navbar from './navbar/navbar';
+import Products from './products/products';
 import './../styles.scss';
+
+const products = [
+    { title: 'Cabbage', isFruit: false, id: 1 },
+    { title: 'Garlic', isFruit: false, id: 2 },
+    { title: 'Apple', isFruit: true, id: 3 },
+];
 
 export default function App() {
     const user = {
@@ -17,6 +24,7 @@ export default function App() {
             <h1 className="avatar">Welcome to my app</h1>
             <Profile user={user}></Profile>
             <MyButton dto={dto}/>
+            <Products products={products}></Products>
         </>
     );
 }
